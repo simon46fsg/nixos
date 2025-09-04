@@ -2,15 +2,15 @@
   description = "NixOs config";
 
   inputs = {
-    nixpkgs.url = "github:NixOs/nixpkgs/nixos-25.05";
+    nixpkgs.url = "github:NixOs/nixpkgs/nixos-unstable";
 
     home-manager = {
-      url = "github:nix-community/home-manager/release-25.05";
+      url = "github:nix-community/home-manager/release-unstable";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
     nixvim = {
-      url = "github:nix-community/nixvim/nixos-25.05";
+      url = "github:nix-community/nixvim/nixos-unstable";
       # If you are not running an unstable channel of nixpkgs, select the corresponding branch of nixvim.
       # url = "github:nix-community/nixvim/nixos-25.05";
 
