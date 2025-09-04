@@ -19,7 +19,7 @@
 	home-manager.nixosModules.home-manager
 	{
 	  home-manager.useGlobalPkgs = true;
-	  home-manager.useUserPackagers = true;
+	  home-manager.useUserPackages = true;
 	  home-manager.users.simon = import ./home.nix;
         }
       ];
