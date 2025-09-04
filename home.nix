@@ -59,7 +59,6 @@
       };
       scrolling.multiplier = 5;
       selection.save_to_clipboard = true;
-      window.decorations = "None";
       window.opacity = 0.9;
     };
   };
