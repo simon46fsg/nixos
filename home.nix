@@ -31,6 +31,13 @@
     which
   ];
 
+
+  programs.nixvim = {
+    enable = true;
+    colorschemes.catppuccin.enable = true;
+    pluglins.lualine.enable = true;
+  };
+
   # basic configuration of git, please change to your own
   programs.git = {
     enable = true;
