@@ -60,7 +60,7 @@
       scrolling.multiplier = 5;
       selection.save_to_clipboard = true;
       window.decorations = "None";
-      wondow.opacity = 0.8;
+      window.opacity = 0.9;
     };
   };
 
