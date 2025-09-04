@@ -51,6 +51,7 @@
   programs.alacritty = {
     enable = true;
     # custom settings
+    theme = "rose_pine"
     settings = {
       env.TERM = "xterm-256color";
       font = {
