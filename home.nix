@@ -1,10 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  imports = [
-    ./nixvim.nix
-  ];
-
+  # TODO please change the username & home directory to your own
   home.username = "simon";
   home.homeDirectory = "/home/simon";
 
@@ -81,8 +78,6 @@
       nr = "nixos-rebuild switch --flake ~/mysystem/nixos#simons-nixos";
     };
   };
-
-
 
   home.stateVersion = "25.05";
 }
