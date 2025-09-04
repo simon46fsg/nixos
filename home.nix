@@ -7,6 +7,10 @@
 
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
+    chromium
+    discord
+    spotify
+    thunderbird
     nnn # terminal file manager
 
     # archives
