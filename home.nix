@@ -67,7 +67,8 @@
 
     # set some aliases, feel free to add more or remove some
     shellAliases = {
-      nr = "sudo nixos-rebuild switch --flake ~/mysystem/nixos#simons-nixos";
+      sudo = "sudo ";
+      nr = "nixos-rebuild switch --flake ~/mysystem/nixos#simons-nixos";
     };
   };
 
