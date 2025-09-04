@@ -67,7 +67,7 @@
 
     # set some aliases, feel free to add more or remove some
     shellAliases = {
-      nr = "nixos-rebuild switch --flake ~/mysystem/nixos#simons-nixos"
+      nr = "nixos-rebuild switch --flake ~/mysystem/nixos#simons-nixos";
     };
   };
 
