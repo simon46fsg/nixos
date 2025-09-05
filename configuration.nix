@@ -36,12 +36,17 @@
   };
 
   services.xserver.enable = true;
+  services.xserver.xkb.extraLayouts.de_easy_symbols = {
+    description = "DE layout with nice symbol layer";
+    languages = [ "de" ];
+    symbolsFile = /home/simon/mysystem/nixos/symbols/de_easy_symbols;
+  };
 
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
 
   services.xserver.xkb = {
-    layout = "de";
+    layout = "de_easy_symbols";
     variant = "";
   };
   console.keyMap = "de";

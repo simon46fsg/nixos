@@ -1,0 +1,81 @@
+default
+xkb_symbols "de_easy_symbols" {
+
+    include "latin(type4)"
+
+    name[Group1]="German";
+
+    key <TLDE>	{[dead_circumflex, degree,            U2032,          U2033 ]}; // ′ ″
+    key <AE02>	{[          2,   quotedbl,      twosuperior,      oneeighth ]};
+    key <AE03>	{[          3,    section,    threesuperior,       sterling ]};
+    key <AE04>	{[          4,     dollar,       onequarter,       currency ]};
+    key <AE11>	{[     ssharp,   question,        backslash,   questiondown,    U1E9E ], type[group1]="FOUR_LEVEL_PLUS_LOCK" };
+    key <AE12>	{[ dead_acute, dead_grave,     dead_cedilla,    dead_ogonek ]};
+
+    key <AD03>	{[          e,          E,         EuroSign,       EuroSign ]};
+    key <AD06>	{[          z,          Z,        leftarrow,            yen ]};
+    key <AD11>	{[ udiaeresis, Udiaeresis,   dead_diaeresis, dead_abovering ]};
+    key <AD12>	{[       plus,   asterisk,       asciitilde,         macron ]};
+
+    key <AC02>	{[          s,          S,            U017F,          U1E9E ]}; // ſ ẞ
+    key <AC07>	{[          j,          J,    dead_belowdot,  dead_abovedot ]};
+    key <AC10>	{[ odiaeresis, Odiaeresis, dead_doubleacute,  dead_belowdot ]};
+    key <AC11>	{[ adiaeresis, Adiaeresis,  dead_circumflex,     dead_caron ]};
+    key <BKSL>	{[ numbersign, apostrophe, rightsinglequotemark, dead_breve ]};
+
+    key <LSGT>	{[      less,     greater,            bar, dead_belowmacron ]};
+    key <AB01>	{[          y,          Y,   guillemotright,          U203A ]}; // » ›
+    key <AB02>	{[          x,          X,    guillemotleft,          U2039 ]}; // « ‹
+    key <AB08>	{[      comma,  semicolon,   periodcentered,       multiply ]};
+    key <AB09>	{[     period,      colon,            U2026,       division ]}; // … ÷
+    key <AB10>	{[      minus, underscore,           endash,         emdash ]};
+
+    //from here the layout differs from the basic de layout (some stuff is overwritten)
+    //caps becomes the new super key for easy acces in tiling WMs
+    key <CAPS>  {[    Super_L,    Super_L,          Super_L,        Super_L ]};
+    //the windows key becomes an alt key
+    //not sure if LWIN requires pc104 as keycodes
+    key <LWIN>  {[      Alt_R,      Alt_R,            Alt_R,          Alt_R ]};
+    
+    //the third layer is accessed by the left alt key (it is no longer a real alt key)
+    key <AD01>	{ [         q,          Q, apostrophe]	};
+    key <AD02>	{ [         w,          W, quotedbl]	};
+    key <AD03>	{ [         e,          E, equal ]	};
+    key <AD04>	{ [         r,          R, dollar ]	};
+    key <AD05>	{ [         t,          T, percent ]	};
+    key <AD06>	{ [         z,          Z, ampersand ]	};
+    key <AD07>	{ [         u,          U, braceleft ]	};
+    key <AD08>	{ [         i,          I, bracketleft ]	};
+    key <AD09>	{ [         o,          O, bracketright ]	};
+    key <AD10>	{ [         p,          P, braceright ]	};
+    key <AD11>	{ [underscore, underscore, degree]    };
+    key <AD12>	{ [dead_diaeresis, dead_diaeresis]	};
+
+    key <AC01>	{ [         a,          A, less ]	};
+    key <AC02>	{ [         s,          S, slash ]	};
+    key <AC03>	{ [         d,          D, backslash ]	};
+    key <AC04>	{ [         f,          F, greater ]	};
+    key <AC05>	{ [         g,          G, plus ]	};
+    key <AC06>	{ [         h,          H, asciitilde ]	};
+    key <AC07>	{ [         j,          J, Escape ]	};
+    key <AC08>	{ [         k,          K, parenleft ]	};
+    key <AC09>	{ [         l,          L, parenright ]	};
+    key <AC10>	{ [ semicolon,  dead_diaeresis, BackSpace]  };
+    key <AC11>	{ [     colon,      colon, asciicircum]  };
+
+    //key <BKSL>	{ [ backslash,        bar, 	NoSymbol, paragraph ] };
+    key <AB01>	{ [         y,          Y, grave ]	};
+    key <AB02>	{ [         x,          X, acute ]	};
+    key <AB03>	{ [         c,          C, c ]	};
+    key <AB04>	{ [         v,          V, v ]	};
+    key <AB05>	{ [         b,          B, at ] };
+    key <AB06>	{ [         n,          N, numbersign ]	};
+    key <AB07>	{ [         m,          M, exclam ]	};
+    key <AB08>	{ [     comma,  semicolon, question ] };
+    key <AB09>	{ [    period,      colon, asterisk ] };
+    key <AB10>	{ [     minus,   underscore, bar ] };  // U+2044 is FRACTION SLASH
+
+    include "kpdl(comma)"
+
+    include "level3(lalt_switch)"
+};
