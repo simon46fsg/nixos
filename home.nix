@@ -5,8 +5,6 @@
   home.username = "simon";
   home.homeDirectory = "/home/simon";
 
-  pkgs.config.allowUnfree = true;
-
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
     chromium
