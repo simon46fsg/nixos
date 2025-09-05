@@ -4,7 +4,6 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ./home.nix
       inputs.home-manager.nixosModules.default
     ];
 
@@ -66,6 +65,13 @@
     packages = with pkgs; [
       kdePackages.kate
     ];
+  };
+
+  home-manager = {
+    extraSpecialArgs = { inherit inputs };
+    users = {
+      "simon" = import ./home.nix
+    };
   };
 
   programs.firefox.enable = true;
