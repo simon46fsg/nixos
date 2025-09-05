@@ -1,6 +1,8 @@
 { config, pkgs, ... }:
 
 {
+  imports = [ ./neovim.nix ]
+
   # TODO please change the username & home directory to your own
   home.username = "simon";
   home.homeDirectory = "/home/simon";
