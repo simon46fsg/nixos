@@ -85,6 +85,7 @@
     pcloud
     git
     clang
+    rustup
   ];
 
   services.openssh.enable = true;
