@@ -1,5 +1,12 @@
 { config, pkgs, inputs, ... }:
 
+
+let
+myCustomKeyboardLayout = builtins.path {
+    path = ./symbols/de_easy_symbols;
+    name = "de_easy_symbols";
+};
+in
 {
   imports =
     [ # Include the results of the hardware scan.
@@ -34,12 +41,12 @@
     LC_TELEPHONE = "de_DE.UTF-8";
     LC_TIME = "de_DE.UTF-8";
   };
-
+  
   services.xserver.enable = true;
   services.xserver.xkb.extraLayouts.de_easy_symbols = {
     description = "DE layout with nice symbol layer";
     languages = [ "de" ];
-    symbolsFile = /home/simon/mysystem/nixos/symbols/de_easy_symbols;
+    symbolsFile = myCustomKeyboardLayout;
   };
 
   services.displayManager.sddm.enable = true;
