@@ -1,17 +1,11 @@
 { config, pkgs, inputs, ... }:
 
-
-let
-myCustomKeyboardLayout = builtins.path {
-    path = ./symbols/de_easy_symbols;
-    name = "de_easy_symbols";
-};
-in
 {
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       inputs.home-manager.nixosModules.default
+      ./xkb-symbols/xkb-symbols.nix
     ];
 
   # Bootloader.
@@ -43,20 +37,9 @@ in
   };
   
   services.xserver.enable = true;
-  services.xserver.xkb.extraLayouts.de_easy_symbols = {
-    description = "DE layout with nice symbol layer";
-    languages = [ "de" ];
-    symbolsFile = myCustomKeyboardLayout;
-  };
 
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
-
-  services.xserver.xkb = {
-    layout = "de_easy_symbols";
-    variant = "";
-  };
-  console.keyMap = "de";
 
   services.printing.enable = true;
 
