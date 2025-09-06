@@ -1,7 +1,7 @@
 { pkgs, inputs, ... }: 
 let
     myCustomKeyboardLayout = builtins.path {
-        path = ./xkb_symbols/de_easy_symbols;
+        path = ./de_easy_symbols;
         name = "de_easy_symbols";
     };
 in
