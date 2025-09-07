@@ -12,6 +12,7 @@
   boot.loader.grub.enable = true;
   boot.loader.grub.efiSupport = true;
   boot.loader.grub.device = "nodev";
+  boot.loader.timeout = 1;
   boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "nixos-simon"; # Define your hostname.
@@ -36,8 +37,8 @@
     LC_TIME = "de_DE.UTF-8";
   };
   
+  # display manager stuff
   services.xserver.enable = true;
-
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
 
