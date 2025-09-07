@@ -8,12 +8,13 @@
       ./xkb-symbols/xkb-symbols.nix
     ];
 
-  # Bootloader.
-  boot.loader.grub.enable = true;
-  boot.loader.grub.efiSupport = true;
-  boot.loader.grub.device = "nodev";
-  boot.loader.timeout = 1;
-  boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader = {
+      grub.enable = true;
+      grub.efiSupport = true;
+      grub.device = "nodev";
+      timeout = 1;
+      efi.canTouchEfiVariables = true;
+  };
 
   networking.hostName = "nixos-simon"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -22,8 +23,8 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+  # region stuff
   time.timeZone = "Europe/Berlin";
-
   i18n.defaultLocale = "en_US.UTF-8";
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "de_DE.UTF-8";
@@ -42,8 +43,6 @@
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
 
-  services.printing.enable = true;
-
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
@@ -54,6 +53,7 @@
     pulse.enable = true;
   };
 
+  # setup user
   users.users.simon = {
     isNormalUser = true;
     description = "simon";
@@ -71,16 +71,16 @@
     };
   };
 
-  programs.firefox.enable = true;
   programs.steam.enable = true;
 
+  # something about running dynamically linked stuff (i dont really get it)
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
     #Add missing dynamic libraries unpackaged programs here
   ];
 
+  
   nixpkgs.config.allowUnfree = true;
-
   environment.systemPackages = with pkgs; [
     neovim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     pcloud
