@@ -1,5 +1,5 @@
 default
-xkb_symbols "de_easy_symbols" {
+xkb_symbols "basic" {
 
     include "latin(type4)"
 
@@ -48,8 +48,8 @@ xkb_symbols "de_easy_symbols" {
     key <AD08>	{ [         i,          I, bracketleft ]	};
     key <AD09>	{ [         o,          O, bracketright ]	};
     key <AD10>	{ [         p,          P, braceright ]	};
-    key <AD11>	{ [underscore, underscore, degree]    };
-    key <AD12>	{ [dead_diaeresis, dead_diaeresis]	};
+    key <AD11>	{ [udiaeresis, Udiaeresis, degree]    };
+    key <AD12>	{ [      plus,   asterisk]	};
 
     key <AC01>	{ [         a,          A, less ]	};
     key <AC02>	{ [         s,          S, slash ]	};
@@ -60,8 +60,9 @@ xkb_symbols "de_easy_symbols" {
     key <AC07>	{ [         j,          J, Escape ]	};
     key <AC08>	{ [         k,          K, parenleft ]	};
     key <AC09>	{ [         l,          L, parenright ]	};
-    key <AC10>	{ [ semicolon,  dead_diaeresis, BackSpace]  };
-    key <AC11>	{ [     colon,      colon, asciicircum]  };
+    key <AC10>	{ [odiaeresis, Odiaeresis, dead_diaeresis]  };
+    key <AC11>	{ [adiaeresis, Adiaeresis, asciicircum]  };
+    
 
     //key <BKSL>	{ [ backslash,        bar, 	NoSymbol, paragraph ] };
     key <AB01>	{ [         y,          Y, grave ]	};
