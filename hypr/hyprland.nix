@@ -21,5 +21,6 @@
         rofi-wayland #application launcher
         waybar #status bar
         networkmanagerapplet #manage connections
+        kitty #incase the default config is loaded
     ];
 }
