@@ -72,9 +72,9 @@ xkb_symbols "basic" {
     key <AB05>	{ [         b,          B, at ] };
     key <AB06>	{ [         n,          N, numbersign ]	};
     key <AB07>	{ [         m,          M, asciicircum  ]	};
-    key <AB08>	{ [     comma,  semicolon, question ] };
-    key <AB09>	{ [    period,      colon, asterisk ] };
-    key <AB10>	{ [     minus,   underscore, bar ] };  // U+2044 is FRACTION SLASH
+    key <AB08>	{ [     comma,  semicolon, semicolon ] };
+    key <AB09>	{ [    period,      colon, colon ] };
+    key <AB10>	{ [     minus,   underscore, underscore ] };  // U+2044 is FRACTION SLASH
 
     include "kpdl(comma)"
 
