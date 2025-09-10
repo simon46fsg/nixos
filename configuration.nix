@@ -6,6 +6,7 @@
       ./hardware-configuration.nix
       inputs.home-manager.nixosModules.default
       ./xkb-symbols/xkb-symbols.nix
+      ./hypr/hyprland.nix
     ];
 
   boot.loader = {
