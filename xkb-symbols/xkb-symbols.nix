@@ -17,5 +17,5 @@ in
     variant = "";
   };
 
-  console.keyMap = "de";
+  console.keyMap = "de_easy_symbols";
 }
