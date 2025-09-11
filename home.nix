@@ -17,6 +17,7 @@
     spotify
     thunderbird
     nnn # terminal file manager
+    kdePackages.dolphin
 
     # archives
     zip

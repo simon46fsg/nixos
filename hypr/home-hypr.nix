@@ -32,4 +32,10 @@
       size = 11;
     };
   };
+
+  qt = {
+      enable = true;
+      style.name = "adwaita-dark";
+      style.package = pkgs.adwaita-qt;
+  };
 }
