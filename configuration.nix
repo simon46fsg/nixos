@@ -41,7 +41,7 @@
   
   # display manager stuff
   services.xserver.enable = true;
-  # services.displayManager.sddm.enable = true;
+  services.displayManager.sddm.enable = true;
   # services.desktopManager.plasma6.enable = true;
 
   # Enable sound with pipewire.
