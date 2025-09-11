@@ -72,6 +72,11 @@
     };
   };
 
+  inputs.stylix = {
+      enable = true;
+      base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine.yaml";
+  };
+
   programs.steam.enable = true;
 
   # something about running dynamically linked stuff (i dont really get it)
