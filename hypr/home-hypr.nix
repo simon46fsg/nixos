@@ -6,8 +6,7 @@
     wayland.windowManager.hyprland.enable = true;
     wayland.windowManager.hyprland.extraConfig = builtins.readFile ./hyprland.conf;
 
-    {
-  home.pointerCursor = {
+    home.pointerCursor = {
     gtk.enable = true;
     # x11.enable = true;
     package = pkgs.bibata-cursors;
@@ -33,5 +32,4 @@
       size = 11;
     };
   };
-}
 }
