@@ -65,7 +65,7 @@
       };
       scrolling.multiplier = 5;
       selection.save_to_clipboard = true;
-      window.opacity = 0.9;
+      # window.opacity = 0.9;
     };
   };
 
