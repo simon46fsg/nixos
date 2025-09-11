@@ -1,6 +1,11 @@
 { config, pkgs, ... }:
 
 {
+  imports =
+    [
+       ./hypr/home-hypr.nix 
+    ];
+
   # TODO please change the username & home directory to your own
   home.username = "simon";
   home.homeDirectory = "/home/simon";
