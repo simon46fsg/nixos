@@ -5,9 +5,6 @@
 
     hardware.graphics.enable = true;
 
-    xdg.portal.enable = true;
-    xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
-
     environment.systemPackages = with pkgs;  [
         dunst #notification demon
         libnotify #dunst depends on this (dont get i need to declare this)
