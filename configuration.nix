@@ -91,6 +91,7 @@
           desktop = 0.9;
           popups = 0.9;
       };
+      image = ./bear-wallpaper.jpg;
   };
 
   programs.steam.enable = true;
