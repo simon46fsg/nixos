@@ -25,7 +25,7 @@
           layer = "top";
           modules-left = [ "custom/launcher" "custom/wg" "cpu" "memory" "custom/weather" "hyprland/workspaces" ];
           modules-center = [ "mpris" ];
-          modules-right = [ "network" "pulseaudio" "backlight" "battery" "tray" "hyprland/language" "custom/wallpaper" "idle_inhibitor" "custom/refresh-rate" "clock" ];
+          modules-right = [ "network" "pulseaudio" "backlight" "battery" "tray" "custom/refresh-rate" "idle_inhibitor" "clock" ];
 
           "hyprland/workspaces" = {
             format = "{name}";
@@ -97,7 +97,7 @@
         format-ethernet = "󰈀";
         format-disconnected = "󰤭";
         tooltip-format = "{essid}";
-        interval = 1;
+        interval = 5;
         on-click = "~/.config/hypr/scripts/rofi-wifi.sh";
         format-icons = [ "󰤯" "󰤟" "󰤢" "󰤥" "󰤨" ];
       };
@@ -267,12 +267,10 @@
           padding: 3px 4px;
           margin: 8px 0px;
         }
+        #idle_inhibitor { border-radius: 0 8px 8px 0; }
 
         /* Rounded corners for specific group elements */
-        #language { border-radius: 8px 0 0 8px; }
-        #custom-refresh-rate { border-radius: 0 8px 8px 0; }
         #network { border-radius: 8px 0 0 8px; }
-        #battery { border-radius: 0 8px 8px 0; }
 
         /* Temperature, CPU, and Memory colors */
         #temperature { color: #5796E0; }
