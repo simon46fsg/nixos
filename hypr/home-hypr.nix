@@ -1,5 +1,9 @@
 { pkgs, inputs, ... }: 
 {
+  imports =
+    [
+       ./waybar/waybar.nix 
+    ];
 
     # Optional, hint Electron apps to use Wayland:
     home.sessionVariables.NIXOS_OZONE_WL = "1";
