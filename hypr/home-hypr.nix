@@ -45,6 +45,7 @@
               "7" = [ ];
               "8" = [ ];
               "9" = [ ];
+              "10" = [ ];
             };
           };
 
@@ -59,7 +60,7 @@
           };
 
           "clock" = {
-            format = "{:%H:%M}";
+            format = "{:%H:%M %d.%m.%Y}";
             format-alt = "{:%b %d %Y}";
             tooltip-format = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
           };
@@ -71,83 +72,83 @@
           };
 
           "memory" = {
-            interval = 30;
-            format = "🧠 {}%";
-            format-alt = "🧠 {used:0.1f}GB";
-            max-length = 10;
-          };
+        interval = 30;
+        format = "🧠 {}%";
+        format-alt = "🧠 {used:0.1f}GB";
+        max-length = 10;
+      };
 
-          "backlight" = {
-            device = "intel_backlight";
-            format = "{icon}";
-            tooltip = true;
-            format-alt = "<small>{percent}%</small>";
-            format-icons = [ "󱩎" "󱩏" "󱩐" "󱩑" "󱩒" "󱩓" "󱩔" "󱩕" "󱩖" "󰛨" ];
-            on-scroll-up = "brightnessctl set 1%+";
-            on-scroll-down = "brightnessctl set 1%-";
-            smooth-scrolling-threshold = "2400";
-            tooltip-format = "Brightness {percent}%";
-          };
+      "backlight" = {
+        device = "intel_backlight";
+        format = "{icon}";
+        tooltip = true;
+        format-alt = "<small>{percent}%</small>";
+        format-icons = [ "󱩎" "󱩏" "󱩐" "󱩑" "󱩒" "󱩓" "󱩔" "󱩕" "󱩖" "󰛨" ];
+        on-scroll-up = "brightnessctl set 1%+";
+        on-scroll-down = "brightnessctl set 1%-";
+        smooth-scrolling-threshold = "2400";
+        tooltip-format = "Brightness {percent}%";
+      };
 
-          "network" = {
-            format-wifi = "<small>{bandwidthDownBytes}</small> {icon}";
-            min-length = 10;
-            fixed-width = 10;
-            format-ethernet = "󰈀";
-            format-disconnected = "󰤭";
-            tooltip-format = "{essid}";
-            interval = 1;
-            on-click = "~/.config/hypr/scripts/rofi-wifi.sh";
-            format-icons = [ "󰤯" "󰤟" "󰤢" "󰤥" "󰤨" ];
-          };
+      "network" = {
+        format-wifi = "<small>{bandwidthDownBytes}</small> {icon}";
+        min-length = 10;
+        fixed-width = 10;
+        format-ethernet = "󰈀";
+        format-disconnected = "󰤭";
+        tooltip-format = "{essid}";
+        interval = 1;
+        on-click = "~/.config/hypr/scripts/rofi-wifi.sh";
+        format-icons = [ "󰤯" "󰤟" "󰤢" "󰤥" "󰤨" ];
+      };
 
-          "custom/wg" = {
-            exec = "~/.config/hypr/scripts/wg-status.sh";
-            interval = 5;
-            format = "{}";
-            on-click = "~/.config/hypr/scripts/wg-toggle.sh";
-          };
+      "custom/wg" = {
+        exec = "~/.config/hypr/scripts/wg-status.sh";
+        interval = 5;
+        format = "{}";
+        on-click = "~/.config/hypr/scripts/wg-toggle.sh";
+      };
 
-          "pulseaudio" = {
-            format = "{icon}";
-            format-muted = "󰖁";
-            format-icons = {
-              default = [ "" "" "󰕾" ];
-            };
-            on-click = "pamixer -t";
-            on-scroll-up = "pamixer -i 1";
-            on-scroll-down = "pamixer -d 1";
-            on-click-right = "exec pavucontrol";
-            tooltip-format = "Volume {volume}%";
-          };
+      "pulseaudio" = {
+        format = "{icon}";
+        format-muted = "󰖁";
+        format-icons = {
+          default = [ "" "" "󰕾" ];
+        };
+        on-click = "pamixer -t";
+        on-scroll-up = "pamixer -i 1";
+        on-scroll-down = "pamixer -d 1";
+        on-click-right = "exec pavucontrol";
+        tooltip-format = "Volume {volume}%";
+      };
 
-          "battery" = {
-            bat = "BAT0";
-            adapter = "ADP0";
-            interval = 60;
-            states = {
-              warning = 15;
-              critical = 7;
-            };
-            max-length = 20;
-            format = "{icon}";
-            format-warning = "{icon}";
-            format-critical = "{icon}";
-            format-charging = "<span font-family='Font Awesome 6 Free'></span>";
-            format-plugged = "󰚥";
-            format-notcharging = "󰚥";
-            format-full = "󰂄";
-            format-alt = "<small>{capacity}%</small>";
-            format-alt-warning = "<small>{capacity}%</small>";
-            format-critical-alt = "<small>{capacity}%</small>";
-            format-icons = [ "󱊡" "󱊢" "󱊣" ];
-          };
+      "battery" = {
+        bat = "BAT0";
+        adapter = "ADP0";
+        interval = 60;
+        states = {
+          warning = 15;
+          critical = 7;
+        };
+        max-length = 20;
+        format = "{icon}";
+        format-warning = "{icon}";
+        format-critical = "{icon}";
+        format-charging = "<span font-family='Font Awesome 6 Free'></span>";
+        format-plugged = "󰚥";
+        format-notcharging = "󰚥";
+        format-full = "󰂄";
+        format-alt = "<small>{capacity}%</small>";
+        format-alt-warning = "<small>{capacity}%</small>";
+        format-critical-alt = "<small>{capacity}%</small>";
+        format-icons = [ "󱊡" "󱊢" "󱊣" ];
+      };
 
-          "custom/weather" = {
-            format = "{}°C";
-            tooltip = true;
-            interval = 3600;
-            exec = "wttrbar --location Kuwait";
+      "custom/weather" = {
+        format = "{}°C";
+        tooltip = true;
+        interval = 3600;
+        exec = "wttrbar --location Innsbruck";
             return-type = "json";
           };
 
