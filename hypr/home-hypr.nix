@@ -2,7 +2,6 @@
 {
   imports =
     [
-       ./waybar/waybar.nix 
     ];
 
     # Optional, hint Electron apps to use Wayland:
