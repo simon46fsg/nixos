@@ -329,8 +329,6 @@
       hyprpicker
       rofi-wayland
       rofimoji
-      qt6.qtwayland
-      kdePackages.qt6ct
       slurp
       swappy
       waypipe
@@ -342,7 +340,6 @@
       wttrbar
       ydotool
       xdg-utils
-      xwaylandvideobridge
       playerctl
       brightnessctl
       networkmanagerapplet
