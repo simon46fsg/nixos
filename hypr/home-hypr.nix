@@ -17,6 +17,18 @@
         size = 16;
     };
 
+    # GTK theming settings
+    gtk = {
+        enable = true;
+        #Icon Theme
+        iconTheme = {
+            package = pkgs.adwaita-icon-theme;
+            name = "Adwaita";
+            # package = pkgs.kdePackages.breeze-icons;
+            # name = "Breeze-Dark";
+        };
+    };
+
     programs.waybar = {
       enable = true;
       settings = {

@@ -16,8 +16,11 @@
     discord
     spotify
     thunderbird
+    ranger
     nnn # terminal file manager
-    kdePackages.dolphin
+
+    # kde stuff
+    nemo
 
     # archives
     zip
