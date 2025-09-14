@@ -24,6 +24,8 @@
     kdePackages.dolphin
     nemo
 
+    evince
+
     # archives
     zip
     xz
