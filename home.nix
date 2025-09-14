@@ -20,6 +20,8 @@
     nnn # terminal file manager
 
     # kde stuff
+    kdePackages.okular
+    kdePackages.dolphin
     nemo
 
     # archives
@@ -36,6 +38,41 @@
     # misc
     which
   ];
+
+    home.sessionVariables = {
+        EDITOR = "nvim";
+        BROWSER = "google-chrome-stable";
+        TERMINAL = "alacritty";
+    };
+    xdg = {
+        portal.enable = true;
+        mimeApps.enable = true;
+        mimeApps.defaultApplications = {
+            "text/plain" = [ "nvim.desktop" ];
+            "application/pdf" = [ "okular.desktop" ];
+            "image/" = [ "viewnior" ];
+        };
+        desktopEntries = {
+            nvim = {
+                name = "nvim";
+                exec = "nvim";
+                terminal = true;
+                type = "Application";
+            }; 
+            nnn = {
+                name = "nnn";
+                exec = "nnn";
+                terminal = true;
+                type = "Application";
+            }; 
+            okular = {
+                name = "okular";
+                exec = "okular";
+                terminal = false;
+                type = "Application";
+            }; 
+        };
+    };
 
   # basic configuration of git, please change to your own
   programs.git = {
