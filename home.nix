@@ -50,7 +50,8 @@
         mimeApps.defaultApplications = {
             "text/plain" = [ "nvim.desktop" ];
             "application/pdf" = [ "okular.desktop" ];
-            "image/" = [ "viewnior" ];
+            "image/png" = [ "viewnior.desktop" ];
+            "image/jpg" = [ "viewnior.desktop" ];
         };
         desktopEntries = {
             nvim = {
