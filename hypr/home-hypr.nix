@@ -326,7 +326,7 @@
       hypridle
       hyprpaper
       hyprpicker
-      rofi-wayland
+      rofi
       rofimoji
       slurp
       swappy

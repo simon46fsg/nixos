@@ -9,7 +9,7 @@
         dunst #notification demon
         libnotify #dunst depends on this (dont get i need to declare this)
         swww #for wallpapers
-        rofi-wayland #application launcher
+        rofi #application launcher
         waybar #status bar
         networkmanagerapplet #manage connections
         kitty #incase the default config is loaded
