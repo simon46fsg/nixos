@@ -45,13 +45,14 @@
         TERMINAL = "alacritty";
     };
     xdg = {
+        terminal-exec.enable = true;
+        terminal-exec.settings.default = [ "alacritty.desktop" ];
         portal.enable = true;
         mimeApps.enable = true;
         mimeApps.defaultApplications = {
             "text/plain" = [ "nvim.desktop" ];
             "application/pdf" = [ "okular.desktop" ];
-            "image/png" = [ "viewnior.desktop" ];
-            "image/jpg" = [ "viewnior.desktop" ];
+            "image/jpeg" = [ "okular.desktop" ];
         };
         desktopEntries = {
             nvim = {
