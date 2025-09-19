@@ -24,8 +24,7 @@
     kdePackages.dolphin
     nemo
 
-    evince
-
+    libreoffice
     # archives
     zip
     xz
