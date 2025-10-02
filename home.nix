@@ -16,6 +16,7 @@
     discord
     spotify
     thunderbird
+    keepassxc
     ranger
     nnn # terminal file manager
 
