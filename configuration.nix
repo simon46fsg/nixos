@@ -3,19 +3,14 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
       inputs.home-manager.nixosModules.default
       ./xkb-symbols/xkb-symbols.nix
       ./hypr/hyprland.nix
     ];
 
-  boot.loader = {
-      grub.enable = true;
-      grub.efiSupport = true;
-      grub.device = "nodev";
-      timeout = 1;
-      efi.canTouchEfiVariables = true;
-  };
+  # Bootloader.
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "nixos-simon"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.

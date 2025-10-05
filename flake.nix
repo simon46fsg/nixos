@@ -18,10 +18,18 @@
   outputs = { self, nixpkgs, stylix, ... }@inputs: {
     # use "nixos", or your hostname as the name of the configuration
     # it's a better practice than "default" shown in the video
-    nixosConfigurations.simons-nixos = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.desktop-home = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
       modules = [
-        ./configuration.nix
+        ./hosts/desktop-home/configuration.nix
+        inputs.home-manager.nixosModules.default
+        inputs.stylix.nixosModules.stylix
+      ];
+    };
+    nixosConfigurations.laptop-hp = nixpkgs.lib.nixosSystem {
+      specialArgs = {inherit inputs;};
+      modules = [
+        ./hosts/laptop-hp/configuration.nix
         inputs.home-manager.nixosModules.default
         inputs.stylix.nixosModules.stylix
       ];
