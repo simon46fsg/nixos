@@ -19,11 +19,10 @@
     keepassxc
     ranger
     nnn # terminal file manager
+    nautilus
 
     # kde stuff
     kdePackages.okular
-    kdePackages.dolphin
-    nemo
 
     libreoffice
     # archives
@@ -55,6 +54,7 @@
             "text/plain" = [ "nvim.desktop" ];
             "application/pdf" = [ "okular.desktop" ];
             "image/jpeg" = [ "okular.desktop" ];
+            "image/png" = [ "okular.desktop" ];
         };
         desktopEntries = {
             nvim = {
