@@ -37,7 +37,7 @@
           layer = "top";
           modules-left = [ "custom/launcher" "custom/wg" "cpu" "memory" "custom/weather" "hyprland/workspaces" ];
           modules-center = [ "mpris" ];
-          modules-right = [ "network" "pulseaudio" "backlight" "battery" "tray" "custom/refresh-rate" "idle_inhibitor" "clock" ];
+          modules-right = [ "pulseaudio" "backlight" "battery" "tray" "custom/refresh-rate" "idle_inhibitor" "clock" ];
 
           "hyprland/workspaces" = {
             format = "{name}";
