@@ -37,7 +37,7 @@
           layer = "top";
           modules-left = [ "custom/launcher" "custom/wg" "cpu" "memory" "custom/weather" "hyprland/workspaces" ];
           modules-center = [ "mpris" ];
-          modules-right = [ "pulseaudio" "backlight" "battery" "tray" "custom/refresh-rate" "idle_inhibitor" "clock" ];
+          modules-right = [ "pulseaudio" "backlight" "battery" "tray" "idle_inhibitor" "clock" ];
 
           "hyprland/workspaces" = {
             format = "{name}";
@@ -227,7 +227,6 @@
         }
 
         /* Styling for Network, Pulseaudio, Backlight, and Battery group */
-        #network,
         #pulseaudio{
           background-color: #222034;
           font-size: 20px;
@@ -235,6 +234,15 @@
           border-radius: 8px;
           margin: 8px 2px;
         }
+        #pulseaudio.muted {
+          color: #fb958b;
+          background-color: #222034;
+          font-size: 20px;
+          padding: 3px 14px 3px 10px;
+          border-radius: 8px;
+          margin: 8px 2px;
+        }
+
 
         #backlight{
           background-color: #222034;
@@ -247,7 +255,7 @@
         #battery {
           background-color: #222034;
           font-size: 20px;
-          padding: 3px 0px 3px 12px;
+          padding: 3px 12px 3px 12px;
           border-radius: 8px;
           margin: 8px 2px;
         }
@@ -257,15 +265,11 @@
         #backlight { color: #ecd3a0; }
         #battery { 
         color: #8fbcbb;
-        padding-right: 14px
         }
 
         /* Battery state-specific colors */
         #battery.warning { color: #ecd3a0; }
         #battery.critical:not(.charging) { color: #fb958b; }
-
-        /* Pulseaudio mute state */
-        #pulseaudio.muted { color: #fb958b; }
 
         /* Styling for Language, Custom Wallpaper, Idle Inhibitor, Custom Refresh Rate group */
         #language,
@@ -275,7 +279,7 @@
           background-color: #222034;
           color: #8a909e;
           padding: 3px 4px;
-          margin: 8px 0px;
+          margin: 8px 2px;
         }
         #idle_inhibitor { border-radius: 8px 8px 8px 8px; }
 
@@ -306,6 +310,7 @@
           background-color: #ecf0f1;
           color: #2d3436;
           border-radius: 8px;
+          margin: 8px 2px;
         }
 
         /* Custom launcher */
