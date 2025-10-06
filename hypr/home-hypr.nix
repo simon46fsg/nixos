@@ -228,12 +228,26 @@
 
         /* Styling for Network, Pulseaudio, Backlight, and Battery group */
         #network,
-        #pulseaudio,
-        #backlight,
+        #pulseaudio{
+          background-color: #222034;
+          font-size: 20px;
+          padding: 3px 14px 3px 10px;
+          border-radius: 8px;
+          margin: 8px 2px;
+        }
+
+        #backlight{
+          background-color: #222034;
+          font-size: 20px;
+          padding: 3px 14px 3px 8px;
+          border-radius: 8px;
+          margin: 8px 2px;
+        }
+
         #battery {
           background-color: #222034;
           font-size: 20px;
-          padding: 3px 8px;
+          padding: 3px 0px 3px 12px;
           border-radius: 8px;
           margin: 8px 2px;
         }
