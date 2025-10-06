@@ -234,7 +234,8 @@
           background-color: #222034;
           font-size: 20px;
           padding: 3px 8px;
-          margin: 8px 0px;
+          border-radius: 8px;
+          margin: 8px 2px;
         }
 
         /* Module-specific colors for Network, Pulseaudio, Backlight, Battery */
@@ -262,7 +263,7 @@
           padding: 3px 4px;
           margin: 8px 0px;
         }
-        #idle_inhibitor { border-radius: 0 8px 8px 0; }
+        #idle_inhibitor { border-radius: 8px 8px 8px 8px; }
 
         /* Rounded corners for specific group elements */
         #network { border-radius: 8px 0 0 8px; }
