@@ -103,18 +103,6 @@
         tooltip-format = "Brightness {percent}%";
       };
 
-      "network" = {
-        format-wifi = "<small>{bandwidthDownBytes}</small> {icon}";
-        min-length = 10;
-        fixed-width = 10;
-        format-ethernet = "󰈀";
-        format-disconnected = "󰤭";
-        tooltip-format = "{essid}";
-        interval = 5;
-        on-click = "~/.config/hypr/scripts/rofi-wifi.sh";
-        format-icons = [ "󰤯" "󰤟" "󰤢" "󰤥" "󰤨" ];
-      };
-
       "pulseaudio" = {
         format = "{icon}";
         format-muted = "󰖁";
