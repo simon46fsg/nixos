@@ -87,6 +87,7 @@
         interval = 30;
         format = "🧠 {}%";
         format-alt = "🧠 {used:0.1f}GB";
+        min-lenght = 10;
         max-length = 10;
       };
 
@@ -112,13 +113,6 @@
         interval = 5;
         on-click = "~/.config/hypr/scripts/rofi-wifi.sh";
         format-icons = [ "󰤯" "󰤟" "󰤢" "󰤥" "󰤨" ];
-      };
-
-      "custom/wg" = {
-        exec = "~/.config/hypr/scripts/wg-status.sh";
-        interval = 5;
-        format = "{}";
-        on-click = "~/.config/hypr/scripts/wg-toggle.sh";
       };
 
       "pulseaudio" = {
@@ -151,6 +145,7 @@
         format-notcharging = "󰚥";
         format-full = "󰂄";
         format-alt = "<small>{capacity}%</small>";
+        tooltip-format = "<small>{capacity}%</small>";
         format-alt-warning = "<small>{capacity}%</small>";
         format-critical-alt = "<small>{capacity}%</small>";
         format-icons = [ "󱊡" "󱊢" "󱊣" ];
