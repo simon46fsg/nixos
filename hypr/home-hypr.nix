@@ -35,7 +35,7 @@
         mainBar = {
           height = 20;
           layer = "top";
-          modules-left = [ "custom/launcher" "custom/wg" "cpu" "memory" "custom/weather" "hyprland/workspaces" ];
+          modules-left = [ "custom/launcher" "cpu" "memory" "custom/weather" "hyprland/workspaces" ];
           modules-center = [ "mpris" ];
           modules-right = [ "pulseaudio" "backlight" "battery" "tray" "idle_inhibitor" "clock" ];
 
