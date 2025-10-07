@@ -78,13 +78,13 @@
           };
 
           "cpu" = {
-            interval = 10;
+            interval = 2;
             format = "🤖 {}%";
             max-length = 10;
           };
 
           "memory" = {
-        interval = 30;
+        interval = 10;
         format = "🧠 {}%";
         format-alt = "🧠 {used:0.1f}GB";
         min-lenght = 10;
