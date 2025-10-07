@@ -335,16 +335,6 @@
     };
 
     home.packages = with pkgs; [
-      dbus
-      sway-contrib.grimshot
-      hyprlock
-      hypridle
-      hyprpaper
-      hyprpicker
-      rofi
-      rofimoji
-      slurp
-      swappy
       waypipe
       wf-recorder
       wl-mirror
@@ -353,18 +343,12 @@
       wtype
       wttrbar
       ydotool
-      xdg-utils
       playerctl
       brightnessctl
-      networkmanagerapplet
       kdePackages.kdeconnect-kde
       pamixer
       pavucontrol # Volume control
       jellyfin-ffmpeg # Multimedia libs
-      viewnior # Image viewr
-      mako # Notifications
-      libcanberra-gtk3 # Notification sound
-      libnotify # notify-send
 
       # Gnome Stuff
       gtk-engine-murrine
