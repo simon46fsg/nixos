@@ -44,6 +44,7 @@
         EDITOR = "nvim";
         BROWSER = "google-chrome-stable";
         TERMINAL = "alacritty";
+        HYPRSHOT_DIR="$HOME/Pictures/Screenshots";
     };
     xdg = {
         terminal-exec.enable = true;
