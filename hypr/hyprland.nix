@@ -6,7 +6,6 @@
     hardware.graphics.enable = true;
 
     environment.systemPackages = with pkgs;  [
-        libnotify #dunst depends on this (dont get why i need to declare this)
         swaynotificationcenter
         rofi #application launcher
         waybar #status bar
@@ -20,10 +19,15 @@
         hyprpicker
         xdg-utils
 
-        #sreenshots?
-        swappy
-        slurp
-
+        # Gnome Stuff
+        gtk-engine-murrine
+        gnome-software
+        gnome-disk-utility
+        gnome-text-editor
+        file-roller
+        gnome-calculator
+        nautilus # Gnome file manager
+        gnome-system-monitor
     ];
 
 }
