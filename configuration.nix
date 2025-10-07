@@ -88,7 +88,6 @@
     git
     clang
     rustup
-    xorg.xkbcomp
   ];
 
   services.openssh.enable = true;
