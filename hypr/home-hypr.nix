@@ -125,10 +125,10 @@
           critical = 7;
         };
         max-length = 20;
-        format = "{icon}";
-        format-warning = "{icon}";
-        format-critical = "{icon}";
-        format-charging = "<span font-family='Font Awesome 6 Free'></span>";
+        format = "{icon} <small>{capacity}%</small>";
+        format-warning = "{icon} <small>{capacity}%</small>";
+        format-critical = "{icon} <small>{capacity}%</small>";
+        format-charging = "<span font-family='Font Awesome 6 Free'></span> <small>{capacity}%</small>";
         format-plugged = "󰚥";
         format-notcharging = "󰚥";
         format-full = "󰂄";

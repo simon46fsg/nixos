@@ -9,15 +9,15 @@
           monospace.package = pkgs.nerd-fonts.jetbrains-mono;
           monospace.name = "JetBrainsMono Nerd Font Mono";
           sansSerif.package = pkgs.dejavu_fonts;
-          sansSerif.name = "Dejavu Serif";
+          sansSerif.name = "JetBrainsMono Nerd Font Mono";
           serif.package = pkgs.dejavu_fonts;
-          serif.name = "Dejavu Serif";
+          serif.name = "JetBrainsMono Nerd Font Mono";
       };
       opacity = {
           applications = 0.9;
           terminal = 0.9;
           desktop = 0.9;
-          popups = 0.9;
+          popups = 0.5;
       };
       image = ./bear-wallpaper.jpg;
   };
