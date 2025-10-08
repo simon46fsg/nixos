@@ -33,6 +33,14 @@
     LC_TELEPHONE = "de_DE.UTF-8";
     LC_TIME = "de_DE.UTF-8";
   };
+
+  #nixos helper
+  programs.nh = {
+    enable = true;
+    clean.enable = true;
+    clean.extraArgs = "--keep-since 10d --keep 3";
+    flake = "/home/simon/nixos"; # sets NH_OS_FLAKE variable for you
+  };
   
   # display manager stuff
   services.xserver.enable = true;
