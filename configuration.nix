@@ -87,6 +87,7 @@
     git
     clang
     rustup
+    lutris
   ];
 
   services.openssh.enable = true;
