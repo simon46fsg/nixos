@@ -29,6 +29,13 @@
         };
     };
 
+    programs.alacritty = {
+        enable = true;
+        settings = {
+            window.padding.x = 4;
+        };
+    };
+
     programs.waybar = {
       enable = true;
       settings = {
