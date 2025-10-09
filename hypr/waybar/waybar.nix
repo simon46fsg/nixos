@@ -9,37 +9,9 @@
         mainBar = {
           height = 20;
           layer = "top";
-          modules-left = [ "custom/launcher" "cpu" "memory" "custom/weather" "hyprland/workspaces" ];
+          modules-left = [ "custom/launcher" "cpu" "memory" "custom/weather" ];
           modules-center = [ "mpris" ];
           modules-right = [ "pulseaudio" "backlight" "battery" "tray" "idle_inhibitor" "clock" ];
-
-          "hyprland/workspaces" = {
-            format = "{name}";
-            all-outputs = true;
-            on-click = "activate";
-            format-icons = {
-              active = "󱎴";
-              default = "󰍹";
-            };
-            persistent-workspaces = {
-              "1" = [ ];
-              "2" = [ ];
-              "3" = [ ];
-              "4" = [ ];
-              "5" = [ ];
-              "6" = [ ];
-              "7" = [ ];
-              "8" = [ ];
-              "9" = [ ];
-              "10" = [ ];
-            };
-          };
-
-          "hyprland/language" = {
-            format = "{}";
-            format-ar = "🇰🇼 ";
-            format-en = "🇬🇧 ";
-          };
 
           "tray" = {
             spacing = 10;
@@ -53,7 +25,7 @@
 
           "cpu" = {
             interval = 2;
-            format = "🤖 {}%";
+            format = "🤖 {usage}%";
             max-length = 10;
           };
 
@@ -131,15 +103,6 @@
             };
           };
 
-          "custom/refresh-rate" = {
-            format = "{percentage}Hz";
-            on-click = "~/.config/hypr/scripts/screenHz.sh";
-            return-type = "json";
-            exec = "cat ~/.config/hypr/scripts/hz.json";
-            interval = 1;
-            tooltip = false;
-          };
-
           "idle_inhibitor" = {
             format = "{icon}";
             format-icons = {
@@ -151,11 +114,6 @@
           "custom/launcher" = {
             format = "󱄅";
             on-click = "rofi -show drun";
-          };
-
-          "custom/wallpaper" = {
-            format = "󰸉 ";
-            on-click = "bash ~/.config/hypr/scripts/changewallpaper.sh";
           };
         };
       };

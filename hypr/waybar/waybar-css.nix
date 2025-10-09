@@ -44,6 +44,7 @@
           border-radius: 8px;
           margin: 8px 2px;
         }
+        
         #pulseaudio.muted {
           color: #fb958b;
           background-color: #222034;
@@ -52,7 +53,6 @@
           border-radius: 8px;
           margin: 8px 2px;
         }
-
 
         #backlight{
           background-color: #222034;
@@ -82,9 +82,6 @@
         #battery.critical:not(.charging) { color: #fb958b; }
 
         /* Styling for Language, Custom Wallpaper, Idle Inhibitor, Custom Refresh Rate group */
-        #language,
-        #custom-refresh-rate,
-        #custom-wallpaper,
         #idle_inhibitor {
           background-color: #222034;
           color: #8a909e;
@@ -93,28 +90,10 @@
         }
         #idle_inhibitor { border-radius: 8px 8px 8px 8px; }
 
-        /* Rounded corners for specific group elements */
-        #network { border-radius: 8px 0 0 8px; }
-
         /* Temperature, CPU, and Memory colors */
         #temperature { color: #5796E0; }
         #cpu { color: #fb958b; }
         #memory { color: #a1c999; }
-
-        /* Workspaces active button styling */
-        #workspaces button {
-          color: #5796E0;
-          border-radius: 8px;
-          box-shadow: inset 0 -3px transparent;
-          padding: 3px 4px;
-          transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
-        }
-        #workspaces button.active {
-          color: #ecd3a0;
-          font-weight: bold;
-          border-radius: 8px;
-          transition: all 0.5s cubic-bezier(0.55, -0.68, 0.48, 1.68);
-        }
 
         #idle_inhibitor.activated {
           background-color: #ecf0f1;
