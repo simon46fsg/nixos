@@ -24,7 +24,7 @@
     # kde stuff
     kdePackages.okular
 
-    libreoffice
+    #libreoffice
     # archives
     zip
     xz

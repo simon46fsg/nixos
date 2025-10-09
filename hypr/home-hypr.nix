@@ -353,7 +353,7 @@
       playerctl
       brightnessctl
       kdePackages.kdeconnect-kde
-      pamixer
+      #pamixer
       pavucontrol # Volume control
       jellyfin-ffmpeg # Multimedia libs
 
