@@ -13,10 +13,6 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  services.logind.lidSwitch = "suspend";
-
-  #networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-
   networking.networkmanager.enable = true;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -49,7 +45,6 @@
   services.displayManager.sddm.enable = true;
   services.displayManager.autoLogin.enable = true;
   services.displayManager.autoLogin.user = "simon";
-  # services.desktopManager.plasma6.enable = true;
 
   #bluetooth
   services.blueman.enable = true;
@@ -70,9 +65,6 @@
     isNormalUser = true;
     description = "simon";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      kdePackages.kate
-    ];
   };
 
   home-manager = {
@@ -85,7 +77,7 @@
 
   programs.steam.enable = true;
 
-  # something about running dynamically linked stuff (i dont really get it)
+  # something about running dynamically linked stuff (i think this could be used for python)
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
     #Add missing dynamic libraries unpackaged programs here
