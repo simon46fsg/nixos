@@ -92,6 +92,8 @@
     clang
     rustup
     lutris
+
+    gparted
   ];
 
   services.openssh.enable = true;
