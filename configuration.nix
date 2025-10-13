@@ -78,10 +78,10 @@
   programs.steam.enable = true;
 
   # something about running dynamically linked stuff (i think this could be used for python)
-  programs.nix-ld.enable = true;
-  programs.nix-ld.libraries = with pkgs; [
+  #programs.nix-ld.enable = true;
+  #programs.nix-ld.libraries = with pkgs; [
     #Add missing dynamic libraries unpackaged programs here
-  ];
+  #];
 
   
   nixpkgs.config.allowUnfree = true;
