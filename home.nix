@@ -121,6 +121,7 @@
     bashrcExtra = ''
       export PATH="$PATH:$HOME/bin:$HOME/.local/bin:$HOME/go/bin"
     '';
+    # this is supposed to fix the error message of chrome, but doesnt seem to do anything
     logoutExtra = ''
       pkill chrome
     '';
