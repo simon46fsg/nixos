@@ -121,6 +121,9 @@
     bashrcExtra = ''
       export PATH="$PATH:$HOME/bin:$HOME/.local/bin:$HOME/go/bin"
     '';
+    logoutExtra = ''
+      pkill chrome
+    '';
 
     # set some aliases, feel free to add more or remove some
     shellAliases = {
