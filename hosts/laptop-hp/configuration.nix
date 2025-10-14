@@ -4,6 +4,7 @@
   networking.hostName = "laptop-hp"; # Define your hostname.
   
   #sleep setup
+  powerManagement.enable = true;
   services.logind.lidSwitch = "suspend-then-hibernate";
   systemd.sleep.extraConfig = "HibernateDelaySec=30s";
   swapDevices = [{
