@@ -5,6 +5,7 @@
   
   #sleep setup
   services.logind.lidSwitch = "suspend-then-hibernate";
+  systemd.sleep.extraConfig = "HibernateDelaySec=30s";
   swapDevices = [{
     device = "/swapfile";
     size = 8 * 1024; # 8GB
