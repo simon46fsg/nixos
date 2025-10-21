@@ -5,7 +5,9 @@
   
   #sleep setup
   powerManagement.enable = true;
-  services.logind.lidSwitch = "suspend-then-hibernate";
+  #services.logind.lidSwitch = "suspend-then-hibernate";
+  services.logind.settings.Login.HandleLidSwitch = "suspend-then-hibernate";
+  #services.acpid.lidEventCommands = "hyprlock";
   systemd.sleep.extraConfig = "HibernateDelaySec=20min";
   swapDevices = [{
     device = "/swapfile";
