@@ -94,6 +94,9 @@
     lutris
 
     gparted
+    distrobox
+    podman
+    vscode
   ];
 
   services.openssh.enable = true;
