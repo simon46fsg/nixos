@@ -82,8 +82,10 @@
   # basic configuration of git, please change to your own
   programs.git = {
     enable = true;
-    userName = "simon";
-    userEmail = "simon46fsg@gmail.com";
+    settings.user = {
+        name = "simon";
+        email = "simon46fsg@gmail.com";
+    };
   };
 
   # starship - an customizable prompt for any shell
