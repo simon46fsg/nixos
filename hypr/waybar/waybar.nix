@@ -11,7 +11,7 @@
           layer = "top";
           modules-left = [ "custom/launcher" "cpu" "memory" "custom/weather" ];
           modules-center = [ "mpris" ];
-          modules-right = [ "pulseaudio" "backlight" "battery" "tray" "idle_inhibitor" "clock" ];
+          modules-right = [ "backlight" "pulseaudio" "battery" "tray" "idle_inhibitor" "clock" ];
 
           "tray" = {
             spacing = 10;
@@ -50,7 +50,7 @@
       };
 
       "pulseaudio" = {
-        format = "{icon}";
+        format = "{icon} <small>{volume}%</small>";
         format-muted = "󰖁";
         format-icons = {
           default = [ "" "" "󰕾" ];
