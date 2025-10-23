@@ -97,6 +97,7 @@
     distrobox
     podman
     vscode
+    microsoft-edge
   ];
 
   services.openssh.enable = true;
