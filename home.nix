@@ -53,7 +53,7 @@
         mimeApps.enable = true;
         mimeApps.defaultApplications = {
             "text/plain" = [ "nvim.desktop" ];
-            "application/pdf" = [ "okular.desktop" ];
+            "application/pdf" = [ "edge.desktop" ];
             "image/jpeg" = [ "okular.desktop" ];
             "image/png" = [ "okular.desktop" ];
         };
@@ -73,6 +73,12 @@
             okular = {
                 name = "okular";
                 exec = "okular";
+                terminal = false;
+                type = "Application";
+            }; 
+            edge = {
+                name = "edge";
+                exec = "microsoft-edge";
                 terminal = false;
                 type = "Application";
             }; 
