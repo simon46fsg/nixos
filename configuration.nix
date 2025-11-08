@@ -98,6 +98,7 @@
     podman
     vscode
     microsoft-edge
+    wineWowPackages.waylandFull
   ];
 
   services.openssh.enable = true;
