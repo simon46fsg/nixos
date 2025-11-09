@@ -37,7 +37,7 @@
         };
     };
 
-    xdg.configFile."./rofi/config.rasi".text = builtins.readFile ./rose-pine-simon.rasi;
+    #xdg.configFile."./rofi/config.rasi".text = builtins.readFile ./rose-pine-simon.rasi;
 
     home.packages = with pkgs; [
       waypipe
