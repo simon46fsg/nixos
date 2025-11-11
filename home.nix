@@ -85,6 +85,18 @@
                 terminal = false;
                 type = "Application";
             }; 
+            code_ubuntu = {
+                name = "code_ubuntu";
+                exec = "distrobox-enter -n ubuntu -- code";
+                terminal = false;
+                type = "Application";
+            }; 
+            matlab_ubuntu = {
+                name = "matlab_ubuntu";
+                exec = "distrobox-enter -n ubuntu -- matlab";
+                terminal = false;
+                type = "Application";
+            }; 
         };
     };
 
