@@ -93,7 +93,7 @@
             }; 
             matlab_ubuntu = {
                 name = "matlab_ubuntu";
-                exec = "distrobox-enter -n ubuntu -- matlab";
+                exec = "distrobox-enter -n ubuntu -- /home/simon/bin/matlab_install/bin/matlab -desktop";
                 terminal = false;
                 type = "Application";
             }; 
