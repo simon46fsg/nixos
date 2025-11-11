@@ -46,6 +46,9 @@
         TERMINAL = "alacritty";
         HYPRSHOT_DIR="$HOME/Pictures/Screenshots";
     };
+    home.sessionPath = [
+        "/home/simon/bin/matlab_install/bin"
+    ];
     xdg = {
         terminal-exec.enable = true;
         terminal-exec.settings.default = [ "alacritty.desktop" ];
