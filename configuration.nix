@@ -99,6 +99,8 @@
     vscode
     microsoft-edge
     wineWowPackages.waylandFull
+
+    gcc
   ];
 
   services.openssh.enable = true;
