@@ -92,6 +92,7 @@
     clang
     rustup
     lutris
+    anki
 
     gparted
     distrobox
