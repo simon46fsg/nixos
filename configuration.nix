@@ -99,6 +99,7 @@
     vscode
     microsoft-edge
     wineWowPackages.waylandFull
+    winetricks
 
     gcc
   ];
