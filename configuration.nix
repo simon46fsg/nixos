@@ -104,6 +104,7 @@
 
     gcc
     drawio
+    libreoffice
   ];
 
   services.openssh.enable = true;
