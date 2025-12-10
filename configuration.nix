@@ -103,6 +103,7 @@
     winetricks
 
     gcc
+    drawio
   ];
 
   services.openssh.enable = true;
