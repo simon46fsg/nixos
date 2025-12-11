@@ -105,6 +105,11 @@
     gcc
     drawio
     libreoffice
+
+    (texlive.combine {
+        inherit (pkgs.texlive) scheme-full titlesec;
+    })
+
   ];
 
   services.openssh.enable = true;
