@@ -105,6 +105,7 @@
     gcc
     drawio
     libreoffice
+    arduino
 
     (texlive.combine {
         inherit (pkgs.texlive) scheme-full titlesec;
