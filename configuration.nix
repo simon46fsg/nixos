@@ -64,7 +64,7 @@
   users.users.simon = {
     isNormalUser = true;
     description = "simon";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "dialout" "networkmanager" "wheel" ];
   };
 
   home-manager = {
