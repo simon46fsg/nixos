@@ -60,11 +60,15 @@
     pulse.enable = true;
   };
 
+  #usb
+  services.udisks2.enable = true;
+  virtualisation.libvirtd.enable = true;
+
   # setup user
   users.users.simon = {
     isNormalUser = true;
     description = "simon";
-    extraGroups = [ "dialout" "networkmanager" "wheel" ];
+    extraGroups = [ "dialout" "networkmanager" "wheel" "plugdev" "libvirtd"];
   };
 
   home-manager = {
@@ -93,6 +97,7 @@
     rustup
     lutris
     anki
+    virtualbox
 
     gparted
     distrobox
